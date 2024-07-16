@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Counter Application</h1>
+
+    <button onclick="like()">Like Video</button>
+    <span id="counter">0</span>
+    <button onclick="unlike()">UnLike Video</button>
+
+    <script>
+        var counter = 0;
+        function like() {
+            counter++;
+            document.querySelector("#counter").innerHTML = counter;
+            console.log("Counter is :",counter);
+        }
+
+        function unlike() {
+            counter--;
+            document.querySelector("#counter").innerHTML = counter;
+            console.log("Counter is :",counter);
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Simple Calculator</h1>
+
+    <table>
+        <tr>
+            <td>Enter first number</td>
+            <td>
+                <input type="text" id="box_1" placeholder="Enter first num">
+            </td>
+        </tr>
+        <tr>
+            <td>Enter second number</td>
+            <td>
+                <input type="text" id="box_2" placeholder="Enter second num">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button onclick="add()">+</button>
+                <button onclick="sub()">-</button>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Result is : <span id="result"></span></h2>
+
+    <script>
+        function add() {
+            box_1 = document.querySelector("#box_1").value;
+            box_2 = document.querySelector("#box_2").value;
+            sum = parseInt(box_1) + parseInt(box_2);
+            document.querySelector("#result").innerText = sum;
+        }
+        function sub() {
+            box_1 = document.querySelector("#box_1").value;
+            box_2 = document.querySelector("#box_2").value;
+            sum = parseInt(box_1) - parseInt(box_2);
+            document.querySelector("#result").innerText = sum;
+        }
+    </script>
+    
+</body>
+</html>
